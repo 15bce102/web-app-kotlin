@@ -1,0 +1,66 @@
+<!--Copyright (c) 2018 Razeware LLC-->
+
+<!--Permission is hereby granted, free of charge, to any person obtaining a copy-->
+<!--of this software and associated documentation files (the "Software"), to deal-->
+<!--in the Software without restriction, including without limitation the rights-->
+<!--to use, copy, modify, merge, publish, distribute, sublicense, and/or sell-->
+<!--copies of the Software, and to permit persons to whom the Software is-->
+<!--furnished to do so, subject to the following conditions:-->
+
+<!--The above copyright notice and this permission notice shall be included in-->
+<!--all copies or substantial portions of the Software.-->
+
+<!--Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,-->
+<!--distribute, sublicense, create a derivative work, and/or sell copies of the-->
+<!--Software in any work that is designed, intended, or marketed for pedagogical or-->
+<!--instructional purposes related to programming, coding, application development,-->
+<!--or information technology.  Permission for such use, copying, modification,-->
+<!--merger, publication, distribution, sublicensing, creation of derivative works,-->
+<!--or sale is expressly withheld.-->
+
+<!--THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR-->
+<!--IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,-->
+<!--FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE-->
+<!--AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER-->
+<!--LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,-->
+<!--OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN-->
+<!--THE SOFTWARE.-->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>raywenderlich store</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+  <!--Header-->
+  <div class="header">raywenderlich store</div>
+
+  <!--Loader-->
+  <div id="loader" class="loader">
+    <svg class="spinner" width="66px" height="66px" stroke-width="5" viewBox="0 0 66 66">
+      <circle cx="33" cy="33" r="25"></circle>
+    </svg>
+  </div>
+
+  <!--Content-->
+  <div id="content" class="root root-children">
+    <!--You will append some cards here-->
+  </div>
+
+  <script>
+    // A function to return the API URL.
+    function getApiUrl(){
+      return "https://gist.githubusercontent.com/tarek360/4578e33621011e18829bad0c8d1c8cdf/raw/06d185bebc3e14a56dfa85f53288daddd4ff6a2b/books.json";
+    }
+  </script>
+
+  <!--This script refers to the Kotlin2JS library in path out/production/{your project name}/lib/kotlin.js-->
+  <script src="out/production/bookstore/lib/kotlin.js"></script>
+  <!--This script refers to your app script file in out/production/{your project name}/{your project name}.js-->
+  <script src="out/production/bookstore/bookstore.js"></script>
+
+  </body>
+</html>
